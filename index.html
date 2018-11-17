@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Let's Sort</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+    background-color: #dd4132;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+
+/* Container for flexboxes */
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ed9991;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style the content */
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+/* Style the footer */
+footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border: 4px solid black;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+</style>
+</head>
+<body background="imgNature.jpg">
+
+<marquee style='color:red;font-size:50px;font-weight:bold;font-family:"Algerian";'>SORTING ALGORITHMS </marquee>
+<!--<marquee STYLE='color:red;'>SORTING Algorithm</marquee>-->
+<p style='color:cyan;'>In this project we have created animation depicting the various sorting algorithm. The animation perfectly captures the difference between a O(n2) algorithm and a O(log n) algorithm.</p>
+<p style='color:cyan;'>You can select the type of input like random, increasing etc. Then choose the size of array and then the algorithm you want to see in action.</p>
+
+<header>
+  <h2>Let's know a bit about sorting</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li style='font-size:30px;padding:8px;font-weight:bold;'><a href="./sorting.html">Let's see the animation</a></li>
+    </ul>
+  </nav>
+
+  <article>
+    <h1 style='color:red'>A thought on sorting algorithms</h1>
+    <p>Some algorithms (selection, bubble, heapsort) work by moving elements to their final position, one at a time. You sort an array of size N, put 1 item in place, and continue sorting an array of size N – 1 (heapsort is slightly different).</p>
+<p>Some algorithms (insertion, quicksort, counting, radix) put items into a temporary position, close(r) to their final position. You rescan, moving items closer to the final position with each iteration.</p>
+<p>One technique is to start with a “sorted list” of one element, and merge unsorted items into it, one at a time.</p>
+  </article>
+</section>
+
+<footer>
+  <p style='color:cyan;font-size:20px;font-weight:bold;'>Made by <br>Akshat Trivedi(1PE15CS013)<br>Akshay Kumar(1PE15CS014)</p>
+</footer>
+
+</body>
+</html>
