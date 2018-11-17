@@ -1,4 +1,4 @@
-# sorting.js
+# Animated Sorting of an Array
 A visualization for a bunch of different sorting algorithms in Javascript.
 
 More specifically, we visualize in-place comparison-based sorting algorithms by highlighting each comparison in blue and each swap in red. Currently the following sorting algorithms are implemented:
